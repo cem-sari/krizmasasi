@@ -7,10 +7,11 @@
     <title>Private</title>
 </head>
 <body>
-    <form class="login">
-        <input type="text" placeholder="Üye Adı">
-        <input type="password" placeholder="Parola">
-        <button>GİRİŞ</button> <span>Üye Olmayan Giremez</span>
+    <form action="/signin" method="POST" class="login">
+      <span>Giriş Yap</span>
+        <input type="text" placeholder="Kullanıcı Adı" name="username">
+        <input type="password" placeholder="Parola" name="password">
+        <button>GİRİŞ YAP</button> <span></span>
       </form>
 </body>
 

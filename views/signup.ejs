@@ -7,10 +7,11 @@
     <title>Private</title>
 </head>
 <body>
-    <form class="login">
-        <input type="text" placeholder="Adınız">
-        <input type="password" placeholder="Parola">
-        <button>KAYIT OL</button>
+    <form action="/signup" method="POST" class="login">
+        <span>Kayıt Ol</span>
+        <input  type="text" placeholder="Kullanıcı Adı" name="username">
+        <input type="password" placeholder="Parola" name="password">
+        <button type="submit">KAYIT OL</button>
       </form>
 </body>
 
