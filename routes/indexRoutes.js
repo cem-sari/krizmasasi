@@ -19,10 +19,10 @@ function isLoggedOut(req, res, next){
 };
 
 router.get("/", (req, res)=>{
-    res.render('welcome');
+    res.render('signin');
 });
 
-router.get("/signup", (req, res)=>{
+router.get("/signup", isLoggedIn, (req, res)=>{
     res.render('signup');
 });
 
@@ -52,6 +52,7 @@ router.post("/signin", passport.authenticate("local",
 
 router.get("/soon", (req, res)=>{
         res.render('soon');
+        console.log(req.user.username)
 });
 
 router.get("/room", (req, res)=>{
